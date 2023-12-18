@@ -7,7 +7,7 @@ This repo is for the University of Richmond (URI) coding bootcamp.
 This is the week 5 challenge due 12.18.23. 
 
 ## Link to Repo and Deployed Webpage
-Link to GitHub Repo: https://github.com/msheliga1/uriHW5JQueryBS.git
+Link to GitHub Repo: https://github.com/msheliga1/uriHW5JQueryBS.git   
 Here is a link to the deployed github.io site. https://msheliga1.github.io/uriHW5JQueryBS/   
 Link to screenshot of deployed github.io site. ![Challenge 5 GitHub Deployed Start Screenshot](./assets/images/workingScreenshotStart.PNG)   
 Link to screenshot of site with events. ![Challenge 5 GitHub Events Screenshot](./assets/images/workingScreenshotEvents.PNG)   
