@@ -21,16 +21,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
+    <title>Mike Sheliga's Work Day Scheduler</title>
   </head>
 
   <body>
-    <header class="p-5 mb-4">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+    <header class="px-5 pt-5 pb-2 mb-1">
+      <h1 class="display-3 text-center">Mike Sheliga's Work Day Scheduler</h1>
+      <p class="lead text-center">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead text-center"></p> 
+      <!-- not sure why large blankspace between this and follwoing div, note lead not in css file.-->
     </header>
-    <div class="container-fluid px-5">
+    <div id="hoursDiv" class="container-fluid px-5">
       <!-- Use class for "past", "present", and "future" to apply styles to the
         time-block divs accordingly. The javascript will need to do this by
         adding/removing these classes on each div by comparing the hour in the
@@ -73,6 +74,8 @@
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
     integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
     crossorigin="anonymous"></script>
+    <!-- need isoWeek to get Monday. What a last minute PITA -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/plugin/isoWeek.js"> </script> 
 
     <script src="script.js"></script>
   </body>
