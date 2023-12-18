@@ -23,9 +23,10 @@ Github:
         -- Copied over starter code. Copied one file at a time via command line. Worked well.
         -- Alternate: Go to Demo (root) folder, download zip, moving to local repo, unzip - likely fastest method.     
         -- Could not find a better way to copy over all files.    
+        -- When finally deploying had to (once again) move html, scripts and .css files to root - arghhh. 
     ... create HTML, CSS and javascript, etc. ...  
     Commit and push files back to gitHub  
-    Deploy code (Settings ... CA on left, GitHub Pages->main)  
+    Deploy code (Settings...CodeAndAnimation->Pages on left, GitHub Pages->Branch->main, save)
         - Deployed code name always msheliga1/github.io/RepoName !!
     Make Sure it Works  
     Insert Screenshot of deployment into readme file.  
