@@ -28,10 +28,13 @@ function init() {
 function setDate() {
   myLog("Starting setDate");    
   var currentDay = dayjs().format('MMMM DD');  // dayjs linked at bottom of HTML page, removed year per demo
+  // Having a hard time getting the day of week. Could not find in dayjs documentation! Tried using isoWeek, but too hard. 
   // var isoWeek = require('dayjs/plugin/isoWeek');
   // dayjs.extend(isoWeek);  // dayjs().isoWeekday() name of day of week, .day returns a number.
   // currentDay = dayjs().isoWeekday() + ", " + currentDay;  // isoWeekday() not a function, even with html script load. 
-  // This is total bunk.  I will just write a method to convert number (0-5) to name of day of week (Sunday)
+  // This is total bunk.  I will just write a method to convert number (0-5) to name of day of week (Sunday). 
+  // Upon consulting with Mike the TA, found out dayjs documentation has the dddd format code, but not under parse, but under display!
+  // Parse is for parsing input dates (no DoW ever), while display includes displaying a DoW.  Very tough lesson, but I "learnted" me something. 
   currentDay = numToDOW(dayjs().day()) + ", " + currentDay;
   myLog("Today is " + currentDay);
   // var CD = document.getElementById("currentDay"); // old way
@@ -183,3 +186,9 @@ function onBtnClick(ev) {
   localStorage.setItem(myID, myText.value);
   $("#pSavedArea").text('Saved Event "' + myText.value + '" at ' + AMPMDiv.innerText + ' to Local Storage');
 }
+
+
+
+
+
+
